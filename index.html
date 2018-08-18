@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Reddit Logo Generator</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+	
+	<style>
+		/*html, body {
+			margin: 0;
+			padding: 0;
+		}*/
+		
+		body {
+			background-color: #FFFFFF;
+			color: #000000;
+			width: 100%;
+			
+			font-family: "courier new", courier, monospace;
+		}
+		
+		body.inverted {
+			background-color: #000000;
+			color: #FFFFFF;
+		}
+		
+		/*h1 { font-weight: 100; padding: 50px 0px 30px 0px; }
+		
+		body > * {
+			text-align: center;
+			margin: auto;
+		}*/
+		
+		img {
+			display: block;
+			margin: 10px;
+			image-rendering: pixelated;
+		}
+		
+		.generated-item {
+			display: inline-block;
+			font-size: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<h1>Glitchy Snoo</h1>
+	<p>Generator made for /r/proceduralgeneration</p>
+	<p>
+		Color <select id="color">
+			<option value="inverted" selected="selected">inverted</option>
+			<option value="default">default</option>
+		</select><br>
+		
+		Number <select id="number">
+			<option value="5">5</option>
+			<option value="10" selected="selected">10</option>
+			<option value="25">25</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+			<option value="200">200</option>
+		</select><br>
+		
+		Logo Preset <select id="logo-preset">
+			<option value="default">default</option>
+			<option value="grid" selected="selected">grid</option>
+			<option value="lines">lines</option>
+		</select><br>
+		
+		Text Preset <select id="text-preset">
+			<option value="default">default</option>
+			<option value="grid">grid</option>
+			<option value="lines">lines</option>
+			<option value="glitchy" selected="selected">glitchy</option>
+			<option value="glitchy_grid">glitchy grid</option>
+			<option value="extreme">EXTREME</option>
+		</select>
+	</p>
+	<p><button onclick="run()">generate</button></p>
+	<div id="image-container"></div>
+	<script src="main.js"></script>
+</body>
+</html>
