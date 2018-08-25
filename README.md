@@ -6,6 +6,4 @@ _August, 2018_
 
 This repository contains code of my submission to r/proceduralgeneration/ challenge of creating procedurally generated reddit logos. Created by splicing together existing reddit logos scraped from r/logo and all subreddits over a thousand subscribers with a 120x40px logo.
 
-[Try online demo](https://azlen.me/snoo-generator)
-
 ![Example](example.png)
